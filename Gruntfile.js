@@ -48,6 +48,7 @@ module.exports = function(grunt) {
 					'css/theme/moon.css': 'css/theme/source/moon.scss',
 					'css/theme/solarized.css': 'css/theme/source/solarized.scss',
 					'css/theme/surevine.css': 'css/theme/source/surevine.scss',
+					'css/theme/surevine-dark.css': 'css/theme/source/surevine-dark.scss',
 					'css/theme/blood.css': 'css/theme/source/blood.scss'
 				}
 			}
