@@ -1,0 +1,80 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(https://www.surevine.com/assets/css/fonts.min.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: #747271;
+$headingColor: #99cc00;
+
+$mainFontSize: 38px;
+$mainFont: 'AvenirLTStd-Book', Helvetica, sans-serif;
+$headingFont: 'AvenirLTStd-Book', Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 600;
+$linkColor: #99cc00;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+.surevine-footer {
+	left: 10px;
+	bottom: 10px;
+	position: fixed;
+	display: block;
+	z-index: 30;
+	-webkit-user-select: none;
+}
+
+.title-page .surevine-footer {
+	display: none;
+}
+
+.reveal div.surevine-banner {
+	// background-color: #99cc00;
+	background-image: url(../../images/home-header-bg.png);
+	background-position: 50% -70px;
+	background-repeat: no-repeat;
+	margin-left: -50px;
+	margin-right: -50px;
+	img {
+		margin-left: -160px;
+		margin-bottom: -50px;
+		border: 0px;
+		background: none;
+		box-shadow: none;
+	}
+	h1, h2, h3 {
+		color: #fff;
+	}
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------

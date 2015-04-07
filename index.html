@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/surevine.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,8 +40,12 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
+				<!-- Surevine: need to add title-page data state here. -->
+				<section data-state='title-page' data-background='#deefc5' data-transition='fade' data-background-transition='fade'>
+					<div class='surevine-banner'><!-- And put the header in a banner -->
+						<img src='images/home-banner.png'><!-- With this image here -->
+						<h1>Reveal.js</h1>
+					</div>
 					<h3>The HTML Presentation Framework</h3>
 					<p>
 						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
@@ -374,6 +378,10 @@ Reveal.addEventListener( 'customevent', function() {
 
 			</div>
 
+			<aside class='surevine-footer'>
+				<img src='images/header-logo.png'>
+			</aside>
+
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
@@ -390,6 +398,10 @@ Reveal.addEventListener( 'customevent', function() {
 				center: true,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// SUREVINE STUFF
+				parallaxBackgroundImage: 'images/vines-reveal-background.png',
+				parallaxBackgroundSize: '4287px 3829px',
 
 				// Optional reveal.js plugins
 				dependencies: [
